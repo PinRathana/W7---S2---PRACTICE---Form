@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#237d67;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid gray;
+  }
+
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #726e6e;
+    font-size: 24px;
+    background-color: #edeaea;
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* Add spacing between elements */
+    
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#1bba93;
+  }
+
+  .form-group input[type="email"],
+  .form-group input[type="text"],
+  .form-group input[type="password"],
+  .form-group input[type="file"],
+  .form-group textarea,
+  .form-group select {
+    width: 100%; /* Make sure inputs take up full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensure padding does not affect width */
+  }
+  /* Focus Effect for Inputs */
+  .form-group input[type="email"]:focus,
+  .form-group input[type="text"]:focus,
+  .form-group input[type="password"]:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+  border-color: #1bba93; /* Change border color when input is focused */
+  outline: none; /* Remove default outline for better appearance */
+  }
+
+
+  /* Two-Column Layout */
+  .form-row {
+    display: flex;
+    gap: 20px; /* Add space between two-column layout items */
+  }
+
+  .form-row .form-group {
+    flex: 1;
+  }
+
+  /* Gender and Hobbies Styling */
+  .form-inline {
+    display: flex;
+    gap: 20px; /* Add space between Gender and Hobbies */
+  }
+
+  .form-inline .form-group {
+    flex: 1;
+  }
+
+  .form-options {
+    display: flex;
+    gap: 10px;
+  }
+
+  .form-options label {
+    font-weight: normal;
+  }
+
+  /* Range Slider Styling */
+  .range-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .range-group input[type="range"] {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  /* Bio Textarea */
+  textarea {
+    height: 80px;   /* Adjust the height as needed */
+    width: 100%;    /* Ensure the width stretches to fill the form container */
+    box-sizing: border-box; /* Ensures padding doesn't affect width calculation */
+  }
+
+  /* Submit Button */
+  .submit-btn {
+    display: block;
+    width: auto;
+    padding: 10px 20px;
+    background-color:#1bba93;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: auto; /* Push to the right */
+    margin-top: 20px; /* Add space between form fields and button */
+  }
+
+  .submit-btn:hover {
+    background-color: #8bd9c6;
+  }
